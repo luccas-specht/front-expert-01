@@ -17,8 +17,10 @@
   @apply font-bold text-base;
   @apply border-[#d9d9d9] border-2 rounded-full transition-colors;
   @apply hover:bg-[#503e9d] hover:text-white hover:border-[#503e9d];
-}
+} 
 
-.brand {
-  @apply bg-gray-200;
+.brand a {
+  @apply flex items-center gap-2 text-black;
+  @apply text-xl md:text-2xl font-bold;
+  @apply transition-opacity hover:opacity-80;
 }

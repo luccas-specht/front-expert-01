@@ -8,7 +8,17 @@ export function Header() {
     <header>
       <nav className={styles.nav}>
         <div className={styles.brand}>
-          <Image src="/images/logo.png" />
+          <Link href="/">
+            <a>
+              <Image
+                src="/images/logo.png"
+                width={45}
+                height={36}
+                alt="OnFood"
+              />
+              <span> OnFood</span>
+            </a>
+          </Link>
         </div>
         <ul>
           <li>
