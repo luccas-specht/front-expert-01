@@ -1,7 +1,11 @@
+import styles from './style.module.css';
+
 export function Footer() {
   return (
     <footer>
-      <p>FrontExpert</p>
+      <div className={styles.footer}>
+        <p>@ 2020 - Imersão FrontExpert</p>
+      </div>
     </footer>
   );
 }
