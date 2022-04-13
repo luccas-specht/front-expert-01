@@ -1,0 +1,24 @@
+.nav {
+  @apply flex items-center justify-between;
+  @apply max-w-7xl mx-auto py-8;
+}
+
+
+/* same here */
+.nav ul {
+  @apply flex gap-4;
+}
+
+/* for each children from nav and ul, they'll receive these css styles*/
+/* when we're using tailwind and we need custom any value, just use: []*/
+
+.nav ul a {
+  @apply flex items-center px-6 min-h-[56px];
+  @apply font-bold text-base;
+  @apply border-[#d9d9d9] border-2 rounded-full transition-colors;
+  @apply hover:bg-[#503e9d] hover:text-white hover:border-[#503e9d];
+}
+
+.brand {
+  @apply bg-gray-200;
+}
