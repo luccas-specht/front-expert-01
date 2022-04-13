@@ -1,5 +1,7 @@
-import Image from 'next/image';
 import Link from 'next/link';
+import Image from 'next/image';
+
+import { HomeIcon, BookmarkIcon } from '@/icons';
 
 import styles from './style.module.css';
 
@@ -23,12 +25,18 @@ export function Header() {
         <ul>
           <li>
             <Link href="/">
-              <a>Home</a>
+              <a>
+                <HomeIcon />
+                Home
+              </a>
             </Link>
           </li>
           <li>
             <Link href="/favorites">
-              <a>Favorites</a>
+              <a>
+                <BookmarkIcon />
+                Favorites
+              </a>
             </Link>
           </li>
         </ul>

@@ -19,6 +19,10 @@
   @apply hover:bg-[#503e9d] hover:text-white hover:border-[#503e9d];
 } 
 
+.nav a svg {
+  @apply w-5 h-5 fill-red-600;
+}
+
 .brand a {
   @apply flex items-center gap-2 text-black;
   @apply text-xl md:text-2xl font-bold;
