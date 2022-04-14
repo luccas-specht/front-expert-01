@@ -1,10 +1,8 @@
+import Styles from './style.module.css';
 import { DishDetailsProps } from './type';
-
 import { DeliveryIcon, CategoryIcon, ReviewsIcon } from '@/icons';
 
-import style from './style.module.css';
-
-export function DishDetails({ type, title, subtitle }: DishDetailsProps) {
+export function DishDetails({ type, subtitle, title }: DishDetailsProps) {
   const Icon =
     type === 'delivery'
       ? DeliveryIcon
@@ -13,11 +11,11 @@ export function DishDetails({ type, title, subtitle }: DishDetailsProps) {
       : ReviewsIcon;
 
   return (
-    <div className={style.detail}>
-      <div className={style.icon}>
+    <div className={Styles.detail}>
+      <div className={Styles.icon}>
         <Icon />
       </div>
-      <div>{subtitle && <span>{subtitle}</span>}</div>
+      {subtitle && <span>{subtitle}</span>}
       {title}
     </div>
   );
