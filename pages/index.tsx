@@ -3,6 +3,8 @@ import Head from 'next/head';
 
 import { Dish, PageTemplate } from '@/components';
 
+import styles from '../styles/internals.module.css';
+
 const Home: NextPage = () => {
   return (
     <>
@@ -11,11 +13,14 @@ const Home: NextPage = () => {
         <meta name="description" content="Generated  by create next app" />
       </Head>
       <PageTemplate>
-        {/*  <h1>Encontre opçõees em Delivery próximos a você</h1>
-        <h2>
-          Descubra seu novo Delivery favorito. MIlhares de opções a um clique.
-        </h2> */}
-        <Dish />
+        <div className={styles.content}>
+          <h1>Encontre opçõees em Delivery próximos a você</h1>
+          <h2>
+            Descubra seu novo Delivery favorito. MIlhares de opções a um clique.
+          </h2>
+        </div>
+
+        {/* <Dish /> */}
       </PageTemplate>
     </>
   );
